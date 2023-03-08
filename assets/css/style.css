@@ -218,30 +218,41 @@ main .content {
     padding: 10px 10px;
 }
 
-.content .recently .row {
+.recently {
+    margin-bottom: 35px;
+}
+
+.content .row {
     display: flex;
 }
 
-.content .recently .card {
+.content .card {
     width: calc(100% / 6);
     padding-top: 20px;
     padding-right: 15px;
 }
-
-.recently .card-img img {
+.card-img img {
     width: 100%;
     padding-bottom: 10px;
 }
-
-.recently .card-info {
+.card-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.recently .card-info h4 {
+.card-info h4 {
     margin-bottom: 5px;
 }
+
+.created-for h2 {
+    margin-bottom: 5px;
+}
+
+.created-for p {
+    margin-bottom: 5px;
+}
+
 
 /* ****** FOOTER - PLAYER BAR ****** */
 .player-bar {
