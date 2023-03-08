@@ -192,7 +192,7 @@ main .cta {
 .cta .btn-upgrade a {
     padding: 15px 20px;
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 /*MAIN - CONTENT - CARDS*/
@@ -217,4 +217,135 @@ main .content {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    padding: 10px;
+}
+
+.player-bar .left-player {
+    display: flex;
+}
+
+.left-player .album-cover {
+    padding-right: 10px;
+}
+
+.left-player .album-cover img {
+    width: 55px;
+}
+
+.left-player .album-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.left-player .album-options {
+    display: flex;
+    align-items: center;
+}
+
+.left-player .album-options a:first-child {
+    padding-right: 10px;
+}
+
+/* .center-player{
+    display: flex;
+    flex-direction: column;
+} */
+
+.center-player .commands a {
+    padding: 0 10px;
+}
+
+.commands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.commands #play {
+    font-size: 2rem;
+    padding: 0 22px;
+}
+
+.center-player .song {
+    display: flex;
+    position: relative;
+}
+
+.center-player .song-duration {
+    width: 500px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #6F6F6F;
+    margin: 4px 12px;
+}
+
+.song-duration:before{
+    content: '';
+    width: 15%;
+    background-color: white;
+    height: 5px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.song-duration:hover::before{
+    content: '';
+    width: 15%;
+    background-color: forestgreen;
+    height: 5px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.song-duration:hover::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 20%;
+    cursor: pointer;
+}
+
+.right-player {
+    position: relative;
+    display: flex;
+}
+
+.right-player .icons a {
+    margin-right: 12px;
+}
+
+.volume{
+    align-self: center;
+    width: 150px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #6F6F6F;
+}
+
+.volume:before{
+    content: '';
+    width: 30px;
+    background-color: white;
+    height: 5px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.volume:hover::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    cursor: pointer;
 }
