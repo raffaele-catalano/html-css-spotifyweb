@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 550;
 }
 
@@ -96,7 +96,7 @@ aside .container {
 }
 
 .nav-top {
-    height: calc(100% - 90px);
+    height: calc(100% - 60px);
 }
 
 .nav-top .logo {
@@ -138,9 +138,37 @@ aside .container {
     vertical-align: middle;
 }
 
-
 .nav-bot {
-    height: 90px;
+    height: 60px;
+}
+
+.nav-bot .download {
+    margin-bottom: 5px;
+}
+
+.nav-bot .download img {
+    width: 12%;
+    vertical-align: middle;
+    padding-right: 2px;
+    filter: invert(46%) sepia(9%) saturate(0%) hue-rotate(161deg) brightness(93%) contrast(100%);
+}
+
+.nav-bot hr {
+    border: 1px solid #6F6F6F;
+    margin-bottom: 10px;
+}
+
+.nav-bot .download img:hover {
+    filter: none;
+}  
+
+.nav-bot .user img {
+    width: 15%;
+    vertical-align: middle;
+    padding-right: 3px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    filter: invert(46%) sepia(9%) saturate(0%) hue-rotate(161deg) brightness(93%) contrast(100%);
 }
 
 /*MAIN - CALL TO ACTION*/
