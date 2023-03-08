@@ -219,7 +219,15 @@ main .content {
 }
 
 .recently {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
+}
+
+.created-for {
+    margin-bottom: 45px;
+}
+
+.popular {
+    margin-bottom: 25px;
 }
 
 .content .row {
@@ -252,6 +260,11 @@ main .content {
 .created-for p {
     margin-bottom: 5px;
 }
+
+.popular .card-img img {
+    border-radius: 50%;
+}
+
 
 
 /* ****** FOOTER - PLAYER BAR ****** */
