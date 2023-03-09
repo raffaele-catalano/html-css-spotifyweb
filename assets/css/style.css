@@ -103,12 +103,22 @@ aside .container {
     height: calc(100% - 60px);
 }
 
-.nav-top .logo {
+.nav-top .logo-max {
     margin-bottom: 15px;
 }
 
-.nav-top .logo img {
+.nav-top .logo-max img {
     width: 65%;
+    filter: invert(58%) sepia(92%) saturate(387%) hue-rotate(89deg) brightness(93%) contrast(101%);
+}
+
+.nav-top .logo-min {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.nav-top .logo-min img {
+    width: 25px;
     filter: invert(58%) sepia(92%) saturate(387%) hue-rotate(89deg) brightness(93%) contrast(101%);
 }
 
@@ -121,7 +131,7 @@ aside .container {
 }
 
 .nav-top .menu ul li img {
-    width: 15%;
+    width: 25px;
     vertical-align: middle;
     padding-right: 3px;
     filter: invert(46%) sepia(9%) saturate(0%) hue-rotate(161deg) brightness(93%) contrast(100%);
@@ -167,9 +177,8 @@ aside .container {
 }
 
 .nav-bot .download img {
-    width: 12%;
+    width: 20px;
     vertical-align: middle;
-    padding-right: 2px;
     filter: invert(46%) sepia(9%) saturate(0%) hue-rotate(161deg) brightness(93%) contrast(100%);
 }
 
@@ -183,11 +192,10 @@ aside .container {
 }  
 
 .nav-bot .user img {
-    width: 15%;
+    width: 30px;
     vertical-align: middle;
-    padding-right: 3px;
     background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 50%;
+    border-radius: 20px;
     filter: invert(46%) sepia(9%) saturate(0%) hue-rotate(161deg) brightness(93%) contrast(100%);
 }
 
