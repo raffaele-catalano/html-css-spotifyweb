@@ -249,6 +249,7 @@ main .content {
 
 .content .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .content .card {
@@ -381,7 +382,7 @@ main .content {
 }
 
 .center-player .song-duration {
-    width: 500px;
+    min-width: 500px;
     height: 5px;
     border-radius: 15px;
     background-color: #6F6F6F;
