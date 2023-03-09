@@ -131,16 +131,31 @@ aside .container {
     filter: none;
 }
 
-.nav-top .playlist ul li {
+.nav-top .playlist h5 {
+    padding: 10px 0;
+}
+
+.playlist .new-playlist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.playlist .new-playlist a {
+    margin-right: 5px;
+}
+
+.playlist-list {
+    height: calc(100vh - 680px);
+    overflow-y: auto;
+}
+
+.nav-top .playlist-list ul li {
     margin-bottom: 10px;
 }
 
 .nav-top .playlist ul li:first-child {
     padding-top: 8px;
-}
-
-.nav-top .playlist ul li:first-child i {
-    vertical-align: middle;
 }
 
 .nav-bot {
@@ -229,6 +244,7 @@ main .content {
 
 .content .top-menu ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .content .top-menu ul li {
@@ -334,6 +350,7 @@ main .content {
 
 .player-bar .left-player {
     display: flex;
+    width: 250px;
 }
 
 .left-player .album-cover {
@@ -348,7 +365,7 @@ main .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .left-player .album-options {
@@ -382,7 +399,7 @@ main .content {
 }
 
 .center-player .song-duration {
-    min-width: 500px;
+    min-width: 350px;
     height: 5px;
     border-radius: 15px;
     background-color: #6F6F6F;
@@ -422,6 +439,7 @@ main .content {
 .right-player {
     position: relative;
     display: flex;
+    width: 250px;
 }
 
 .right-player .icons a {

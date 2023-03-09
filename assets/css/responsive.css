@@ -1,15 +1,61 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
 
-    .card {
-        width: calc(100% / 2);
+    .content .card {
+        width: calc(100% / 4);
     }
 
 }  
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 1100px) {
+    .content .card {
+        width: calc(100% / 2);
+    }
 
-    .card {
-        width: calc(100% / 4);
+    .left-player .album-option {
+        padding-right: 0;
+    }
+
+    .center-player .song-duration {
+        min-width: 220px;
+    }
+
+    .song-duration:hover::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: -1px;
+        left: 25%;
+        cursor: pointer;
+    }
+
+    .right-player {
+        padding-left: 50px;
+    }
+
+    .right-player .icons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .right-player .volume {
+        width: 150px;
+    }
+
+    .volume:hover::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 21px;
+        left: 45%;
+        cursor: pointer;
     }
 
 }  
